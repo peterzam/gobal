@@ -13,7 +13,7 @@ func main() {
 
 	rpc := flag.String("r", "https://eth-mainnet.public.blastapi.io", "jsonrpc url")
 	addr := flag.String("a", "", "wallet address")
-	contract := flag.String("c", "", " contract address")
+	contract := flag.String("c", "", "contract address")
 
 	flag.Parse()
 	c, err := ethclient.Dial(*rpc)
